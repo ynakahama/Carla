@@ -157,6 +157,12 @@ cd ~/UnrealEngine_4.22/Engine/Binaries/Linux
 
 Unreal EnginのインストールするためにはUnreal Enginのページにログインしている必要がある
 
+git cloneのためにsshで鍵を生成し登録する必要がある
+
+参考サイト
+
+https://sonnaka.com/git-clone-by-ssh/
+
 ## **Carlaのインストール**
 <br>
 
