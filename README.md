@@ -224,6 +224,10 @@ https://github.com/carla-simulator/carla/issues/2664
 ```
 ./CarlaUE4.sh -opengl
 ```
+
+```
+DISPLAY= ./CarlaUE4.sh -opengl -carla-port=2000
+```
 (重いときは "-quality-level=Low" のオプションをつける)
 <br>
 Carlaが開ければ作業完了
