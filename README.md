@@ -242,8 +242,11 @@ Carlaが開ければ作業完了
 <br>
 # Datageneratorの導入
 Datageneratorのgithub
+
 https://github.com/mmmmaomao/DataGenerator
+
 推奨はcarla 0.9.12だが 2023/12/25のlatest(carla 0.9.15)は動作する
+
 
 
 ## エラー対応
