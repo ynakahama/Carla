@@ -156,7 +156,7 @@ cd ~/UnrealEngine_4.22/Engine/Binaries/Linux
 ## **注意**
 
 Unreal EnginのインストールするためにはUnreal Enginのページにログインしている必要がある
-
+carla 0.9.12
 git cloneのためにsshで鍵を生成し登録する必要がある
 
 参考サイト
@@ -245,7 +245,7 @@ Datageneratorのgithub
 
 https://github.com/mmmmaomao/DataGenerator
 
-推奨はcarla 0.9.12だが 2023/12/25のlatest(carla 0.9.15)は動作する
+推奨はcarla 0.9.12だが 2023/12/25のlatest(carla 0.9.15)1でも動作する
 
 
 
