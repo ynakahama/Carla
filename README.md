@@ -221,6 +221,7 @@ make launchで出るエラーが出た場合以下のサイトを参考にして
 https://github.com/carla-simulator/carla/issues/2664
 
 ## **Carla動作確認**
+以下のどれかでうまく行けば良い
 ```
 ./CarlaUE4.sh -opengl
 ```
@@ -230,7 +231,7 @@ DISPLAY= ./CarlaUE4.sh -opengl -carla-port=2000
 ```
 
 ```
-./CarlaUE4.sh -windowed -carla-port=2000
+./CarlaUE4.sh -carla-port=2000
 ```
 (重いときは "-quality-level=Low" のオプションをつける)
 <br>
@@ -239,21 +240,25 @@ Carlaが開ければ作業完了
 <br>
 <br>
 <br>
-# interp-e2eの導入
-https://github.com/cjy1992/interp-e2e-driving を参考に導入を行う
-<br>
-Cuda, cudnnを変更したことによって起こる、他の変更点をいかに記す
-<br>
-- tensorflow-gpuのバージョンを2.5.0に変更変更
-- tensorflow-probabilityのバージョンを0.12.1に変更
-- tf-agentsのバージョンを0.7.1に変更
-
+# Datageneratorの導入
+Datagenerator
 <br>
 
 ## エラー対応
 - carlaを認識しない場合
     - egg ファイルへのパスが通っていない
+    - .pashrcへ以下を追記
+```
+export PYTHONPATH=$PYTHONPATH:eggまでのパス
+```
 
+- ImportError: cannot import name '_imaging' from 'PIL' (/usr/lib/python3/dist-packages/PIL/__init__.py)
+- PILの設定が変になっているから入れ直して環境を構築し直す
+```
+pip uninstall PIL
+pip uninstall Pillow
+pip install Pillow
+```
 
 
 
